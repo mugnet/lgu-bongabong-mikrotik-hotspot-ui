@@ -1,0 +1,32 @@
+{
+  "name": "bongabong-portal",
+  "version": "1.0.0",
+  "description": "Bongabong hotspot portal",
+  "main": "md5.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugnet/lgu-bongabong-mikrotik-hotspot-ui.git"
+  },
+  "keywords": [
+    "lgu",
+    "bongabong",
+    "mikrotik",
+    "hotspot",
+    "lgubongabong",
+    "mugnet",
+    "jobferrera"
+  ],
+  "author": "Job Ferrera - Allan Kreisler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mugnet/lgu-bongabong-mikrotik-hotspot-ui/issues"
+  },
+  "homepage": "https://github.com/mugnet/lgu-bongabong-mikrotik-hotspot-ui#readme",
+  "dependencies": {
+    "sass": "^1.74.1",
+    "sass-loader": "^14.1.1"
+  }
+}
