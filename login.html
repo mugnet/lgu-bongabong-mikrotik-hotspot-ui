@@ -1,131 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta http-equiv="pragma" content="no-cache" />
-		<meta http-equiv="expires" content="-1" />
-    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<title>Login</title>
-		<link rel="shortcut icon" type="image/png" href="favicon.png">
-		<link href="assets/fonts/font-awesome/font-awesome.css" rel="stylesheet" type="text/css">
-	    <link href="assets/fonts/maven-pro/maven-pro.css" rel="stylesheet" type="text/css">
 
-	    <link rel="stylesheet" type="text/css" media="all" href="assets/css/animate.css">
-	    <link rel="stylesheet" type="text/css" media="all" href="assets/packages/bootstrap/bootstrap.css">
-	    <link rel="stylesheet" type="text/css" media="all" href="assets/packages/aos/aos.css">
-	    <link rel="stylesheet" type="text/css" media="all" href="assets/css/theme.css">
-		<link rel="stylesheet" type="text/css" media="all" href="assets/css/carousel.css">
-	</head>
-	<body>
-		<main>
-			$(if chap-id)
-				<form name="sendin" action="$(link-login-only)" method="post">
-					<input type="hidden" name="username" />
-					<input type="hidden" name="password" />
-					<input type="hidden" name="dst" value="https://www.facebook.com/mikemalaluanbongabongfficial"/>
-					<input type="hidden" name="popup" value="true" />
-				</form>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="-1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Login</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link href="assets/fonts/font-awesome/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="assets/fonts/maven-pro/maven-pro.css" rel="stylesheet" type="text/css">
 
-				<script type="text/javascript" src="md5.js"></script>
-				<script type="text/javascript">
-				<!--
-					function doLogin() {
-					document.sendin.username.value = document.login.username.value;
-					document.sendin.password.value = hexMD5('$(chap-id)' + document.login.username.value + '$(chap-challenge)');
-					document.sendin.submit();
-					return false;
-					}
-				//-->
-				</script>
-			$(endif)
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-8 col-md-7">
-						<div class="brand-info d-flex align-items-center" data-aos="fade-down">
-							<div>
-								<div class="logo">
-									<a href="#">
-										<img src="assets/img/logo.png">
-									</a>
-								</div>
-								<h4 class="text-light font-weight-normal mt-3"><strong><i>"Center of Organic Farming of Oriental Mindoro"</i></strong></h4>
-							</div>
+	<link rel="stylesheet" type="text/css" media="all" href="assets/css/animate.css">
+	<link rel="stylesheet" type="text/css" media="all" href="assets/packages/bootstrap/bootstrap.css">
+	<link rel="stylesheet" type="text/css" media="all" href="assets/packages/aos/aos.css">
+	<link rel="stylesheet" type="text/css" media="all" href="assets/css/carousel.css">
+	<link rel="stylesheet" type="text/css" media="all" href="assets/css/theme.css">
+</head>
+
+<body>
+
+	 
+	
+	
+	<main>
+		$(if chap-id)
+		<form name="sendin" action="$(link-login-only)" method="post">
+			<input type="hidden" name="username" />
+			<input type="hidden" name="password" />
+			<input type="hidden" name="dst" value="https://www.facebook.com/mikemalaluanbongabongfficial" />
+			<input type="hidden" name="popup" value="true" />
+		</form>
+
+		<script type="text/javascript" src="md5.js"></script>
+		<script type="text/javascript">
+			<!-
+				function doLogin() {
+				document.sendin.username.value = document.login.username.value;
+				document.sendin.password.value = hexMD5('$(chap-id)' + document.login.username.value + '$(chap-challenge)');
+				document.sendin.submit();
+				return false;
+				}
+			//-->
+		</script>
+		$(endif)
+
+
+		<div id="slider" class="my-slideshow-container">
+
+			<div class="mySlides fade">
+				<div class="numbertext"></div>
+				<img src="assets/img/img1.jpg">
+			</div>
+
+		</div>
+
+
+		<div class="container-fluid vh-100">
+
+
+
+			<div class="row justify-content-center align-items-center align-middle vh-100">
+
+				<div class="col-lg-4 col-md-5 px-md-0" data-aos="fade-down">
+					<div class="login d-flex justify-content-center align-items-center">
+
+						<div id="ad" >
+							<div class="close hide text-light"> &times; </div>
+							Ad here
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-5 px-md-0 px-3" data-aos="fade-down">
-						<div class="login d-flex justify-content-center align-items-center">
-							<form name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
-	                            <input type="hidden" name="dst" value="https://www.facebook.com/mikemalaluanbongabongfficial"/>
-	                            <input type="hidden" name="popup" value="true" />
-	                            <div class="s-login">
-	                            	<div class="logo-black d-lg-none d-md-none d-block">
-	                            		<!--<a href="http://10.10.10.1/" target="_blank">-->
-										<a href="#">
-											<img src="assets/img/logo.png">
-										</a>
-	                            	</div>
-									<h5>Welcome to Bongabong!</h5>
-									<!-- Slideshow container -->
-									<div class="slideshow-container">
 
-										<!-- Full-width images with number and caption text -->
-										<div class="mySlides fade">
-										<div class="numbertext"></div>
-										<img src="assets/img/img1.jpg" style="width:100%">
-										</div>
-									
-										<div class="mySlides fade">
-										<div class="numbertext"></div>
-										<img src="assets/img/img2.jpg" style="width:100%">
-										</div>
-									
-										<div class="mySlides fade">
-										<div class="numbertext"></div>
-										<img src="assets/img/img1.jpg"  style="width:100%">
-										</div>
-									</div>
-									$(if trial == 'yes')
-									<center><a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" class="btn btn-logout text-space"><strong>GET FREE INTERNET!</strong></a></center>
-	                            	$(endif)
-									<br>
-									<p>Please enter your voucher to access the Internet!</p>
-									$(if error)
-	                                <div class="alert alert-danger">
-	                                  <strong>Error!</strong> $(error).
-	                                </div>
-	                                $(endif)
-									<div class="form-group">
-		                                <input type="text" name="username" class="username form-control" value="$(username)" placeholder="Voucher" />
-		                            </div>
-		                            <!-- <div class="form-group">
+						<form name="login" action="$(link-login-only)" method="post" $(if chap-id)
+							onSubmit="return doLogin()" $(endif)>
+							<input type="hidden" name="dst"
+								value="https://www.facebook.com/mikemalaluanbongabongfficial" />
+							<input type="hidden" name="popup" value="true" />
+							<div class="s-login">
+
+								<h5 class="text-center">Welcome to Bongabong!</h5>
+								<!-- Slideshow container -->
+
+
+								<p class="text-center">Please enter your WiFi Code to access the Internet!</p>
+								$(if error)
+								<div class="alert alert-danger d-flex align-items-center">
+									<div>
+										<svg xmlns="http://www.w3.org/2000/svg"
+											xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="30"
+											height="30" viewBox="0 0 256 256" xml:space="preserve">
+
+											<defs>
+											</defs>
+											<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+												transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+												<path
+													d="M 45 57.469 L 45 57.469 c -1.821 0 -3.319 -1.434 -3.399 -3.252 L 38.465 23.95 c -0.285 -3.802 2.722 -7.044 6.535 -7.044 h 0 c 3.813 0 6.82 3.242 6.535 7.044 l -3.137 30.267 C 48.319 56.036 46.821 57.469 45 57.469 z"
+													style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(229,0,0); fill-rule: nonzero; opacity: 1;"
+													transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+												<circle cx="45" cy="67.67" r="5.42"
+													style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(229,0,0); fill-rule: nonzero; opacity: 1;"
+													transform="  matrix(1 0 0 1 0 0) " />
+												<path
+													d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 C 90 69.813 69.813 90 45 90 z M 45 6 C 23.495 6 6 23.495 6 45 s 17.495 39 39 39 s 39 -17.495 39 -39 S 66.505 6 45 6 z"
+													style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(229,0,0); fill-rule: nonzero; opacity: 1;"
+													transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+											</g>
+										</svg>
+									</div><span class="ml-3"> <strong>Error!</strong> $(error)</span>.
+								</div>
+								$(endif)
+								<div class="form-group access-code">
+									<label for="">WIFI ACCESS CODE</label>
+									<input type="text" name="username" class="username form-control" value="$(username)"
+										placeholder="Voucher" />
+								</div>
+								<!-- <div class="form-group">
 		                                <input type="password" name="password" class="password form-control" placeholder="Password"/>
 									</div> -->
-								</div>
-								<div class="form-group">
-									<button type="submit" class="btn btn-primary btn-block">Connect</button>
-								</div>
-								<p class="text-center">
-										<strong>An initiative of Counsilor Hon. Mike Malaluan</strong>
-										<br>
-										Powered By <a href="https://ebongabong.com/" target="_blank"><strong>eBongabong</a>
-								</p>
-							</form>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="btn btn-primary btn-block">Connect</button>
+							</div>
+							<div class="or text-center">
+								<span> OR </span>
 
-						</div>
+							</div>
+							<div class="form-group">
+								$(if trial == 'yes')
+								<center><a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)"
+										class="btn btn-logout w-100 btn-warning text-space"><strong>GET A FREE INTERNET
+											NOW!</strong></a></center>
+								$(endif)
+							</div>
+							<p class="text-center">
+								<strong>An initiative of Counsilor Hon. Mike Malaluan</strong>
+								<br>
+
+							</p>
+
+							<div class="logos   d-flex justify-content-center">
+								<img src="assets/img/mm.png">
+								<img src="assets/img/logo.png">
+								<img src="assets/img/bagong-pilipinas.png">
+							</div>
+
+							<div class="powered mt-3">
+								Powered By <a href="https://lgu.ebongabong.com/office/mist" target="_blank"><strong>Bongabong ICT</a>
+							</div>
+						</form>
+
 					</div>
 				</div>
 			</div>
-		</main>
+		</div>
+	</main>
 
-		<script type="text/javascript" src="assets/js/jquery.js"></script>
-		<script type="text/javascript" src="assets/js/waypoint.js"></script>
-	    <script type="text/javascript" src="assets/packages/bootstrap/libraries/popper.js"></script>
-	    <script type="text/javascript" src="assets/packages/bootstrap/bootstrap.js"></script>
-	    <script type="text/javascript" src="assets/packages/aos/aos.js"></script>
-	    <script type="text/javascript" src="assets/js/theme.js"></script>
-		<script type="text/javascript" src="assets/js/carousel.js">
-		  	document.login.username.focus();
-		</script>
-	</body>
+
+
+
+	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<script type="text/javascript" src="assets/js/waypoint.js"></script>
+	<script type="text/javascript" src="assets/packages/bootstrap/libraries/popper.js"></script>
+	<script type="text/javascript" src="assets/packages/bootstrap/bootstrap.js"></script>
+	<script type="text/javascript" src="assets/packages/aos/aos.js"></script>
+	<script type="text/javascript" src="assets/js/theme.js"></script>
+	<script type="text/javascript" src="assets/js/carousel.js">
+		document.login.username.focus();
+		
+	</script>
+	<script>
+		$(function () {
+			// setInterval(function(){
+			// 	$('#ad').addClass('show');
+			// },1000);
+			$('.close').click(function(){
+				$('#ad').addClass('hide');
+			});
+		});
+	</script>
+
+ 
+
+
+
+</body>
+
 </html>

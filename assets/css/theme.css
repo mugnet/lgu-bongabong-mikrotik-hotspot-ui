@@ -1,8 +1,273 @@
 /*!
 
  =========================================================
- * Copyleft @teguhrianto22
+ * github / mugnet
+ * Job Ferrera
  =========================================================
 
- */body{color:#333;font-size:1rem;font-family:"Maven Pro", Arial, sans-serif;font-weight:normal;background-image:url("../img/background.jpg");background-size:cover;height:100vh;position:relative;overflow:hidden}@media only screen and (min-width: 768px) and (max-width: 991px){body{height:auto;min-height:100vh;overflow:visible}}@media only screen and (max-width: 767px){body{height:auto;min-height:100vh;overflow:visible;padding:5% 0;background-color:#FFF}}body:after{position:fixed;top:0;left:0;z-index:-1;width:100%;height:100%;content:"";background-color:rgba(38,50,56,0.6)}@media only screen and (max-width: 767px){body:after{display:none}}h1,h2,h3,h4,h5,h6{text-transform:none !important;font-weight:500 !important}.btn-primary{background:#00046c;border-color:#00046c}.btn-primary:hover,.btn-primary:focus{background:#00046c;border-color:#00046c}.btn.focus,.btn:focus{box-shadow:none}.bg-primary{background-color:#00630c !important}::-webkit-input-placeholder{color:#aaa !important}::-moz-placeholder{color:#aaa !important}:-ms-input-placeholder{color:#aaa !important}:-moz-placeholder{color:#aaa !important}main{width:100%}.brand-info{height:100vh;padding:10%}@media only screen and (max-width: 767px){.brand-info{height:0px;padding:0;display:none;overflow:hidden}.brand-info div{height:0px;display:none;overflow:hidden}}.logo-black img{height: 100px;display: block;margin-bottom: 1rem;margin-left: auto;margin-right: auto;}.login{height:100vh;padding:10%;background-color:#FFF}@media only screen and (max-width: 767px){.login{height:auto;min-height:100vh}}.login form{width:100%}.box-white{background-color:#FFF;padding-top:2rem;padding-bottom:2rem}
- /*# sourceMappingURL=theme.css.map */
+ */
+body {
+  color: #333333;
+  font-size: 1rem;
+  font-family: "Maven Pro", Arial, sans-serif;
+  font-weight: normal;
+  background-image: url("../img/development.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+    padding: 5% 0;
+    background-color: #FFF;
+  }
+}
+body:after {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(38, 50, 56, 0.6);
+}
+@media only screen and (max-width: 767px) {
+  body:after {
+    display: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: none !important;
+  font-weight: 500 !important;
+}
+
+.btn-primary {
+  background: #230cf5;
+  border-color: #230cf5;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background: #230cf5;
+  border-color: #230cf5;
+}
+
+.btn.focus, .btn:focus {
+  box-shadow: none;
+}
+
+.bg-primary {
+  background-color: #230cf5 !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaaaaa !important;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: #aaaaaa !important;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #aaaaaa !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #aaaaaa !important;
+}
+
+main {
+  width: 100%;
+}
+
+.brand-info {
+  height: 100vh;
+  padding: 10%;
+}
+@media only screen and (max-width: 767px) {
+  .brand-info {
+    height: 0px;
+    padding: 0;
+    display: none;
+    overflow: hidden;
+  }
+  .brand-info div {
+    height: 0px;
+    display: none;
+    overflow: hidden;
+  }
+}
+
+.logo-black img {
+  -webkit-filter: invert(1); /* Safari 6.0 - 9.0 */
+  filter: invert(1);
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.login {
+  height: 100vh;
+  padding: 10%;
+  background-color: #FFF;
+}
+@media only screen and (max-width: 767px) {
+  .login {
+    height: auto;
+    min-height: 100vh;
+  }
+}
+.login form {
+  width: 100%;
+}
+
+.box-white {
+  background-color: #FFF;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.my-slideshow-container {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 0;
+  width: 100% !important;
+  height: 100vh;
+}
+.my-slideshow-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background: url(../img/login-bg.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+  z-index: 1;
+}
+.my-slideshow-container img {
+  width: 100% !important;
+  height: 100%;
+}
+
+.vh-100 {
+  height: 100vh !important;
+  top: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.login {
+  height: auto !important;
+  border-radius: 5px !important;
+  border: 2px solid #000;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.732);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ebf3f5;
+  box-shadow: rgba(0, 0, 0, 0.65) 0px 10px 30px;
+}
+.login .access-code label {
+  position: absolute;
+  margin-top: 5px;
+  color: #6c6c6c;
+  margin-left: 10px;
+}
+.login .access-code input {
+  height: 70px !important;
+  padding-top: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ebf3f5;
+  font-weight: bold;
+  border: 3px solid rgba(31, 7, 152, 0.524);
+  text-align: center;
+}
+.login .powered {
+  bottom: -40px;
+  opacity: 0.5;
+  text-align: center;
+}
+.login .or span {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  color: #ebf3f5;
+  border: 1px dashed #ebf3f5;
+}
+.login .or span:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  border-bottom: 1px dashed #ebf3f5;
+  margin-top: 13px;
+  margin-left: 28px;
+}
+.login .or span:after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  border-bottom: 1px dashed #ebf3f5;
+  margin-top: 13px;
+  margin-left: -88px;
+}
+.login .logos img {
+  width: 60px;
+  margin: 0 5px;
+}
+.login #ad {
+  position: absolute;
+  display: none;
+  height: 100%;
+  width: 100%;
+  z-index: 999;
+  padding: 15px;
+  background-color: #000;
+  top: -100vh;
+}
+.login #ad.show {
+  display: block;
+  transition: background-color 1s;
+  top: 0;
+}
+.login #ad.hide {
+  display: none;
+  transition: background-color 1s;
+}
+
+.alert-danger {
+  background-color: rgba(244, 140, 140, 0.872);
+  border: 2px solid #fb6262;
+  border-radius: 6px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: rgba(22, 8, 126, 0.6862745098);
+}
+
+/*# sourceMappingURL=theme.css.map */

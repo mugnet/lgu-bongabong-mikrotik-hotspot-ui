@@ -41,20 +41,27 @@
 			//-->
 		</script>
 	</head>
-	<body style="min-height: 100vh; height: auto; overflow: visible; padding: 5% 0;" class="d-flex align-items-center"
+	<body   
 	$(if advert-pending == 'yes')
    		onLoad="openAdvert()"
    	$(endif)>
 		<main>
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-6 col-md-8 text-center" data-aos="fade-down">
-						<div class="box-white">
-							<div class="logo-black">
-				                <a href="$(link-login-only)?target=lv&amp;dst=$(link-orig-esc)" class="text-center d-block mb-3">
-				                    <img src="assets/img/logo.png" alt="CNHS Logo" />
-				                </a>
-				            </div>
+
+
+			<div id="slider" class="my-slideshow-container">
+
+				<div class="mySlides fade">
+					<div class="numbertext"></div>
+					<img src="assets/img/img1.jpg">
+				</div>
+	
+			</div>
+
+			<div class="container-fluid vh-100">
+				<div class="row justify-content-center align-items-center align-middle vh-100">
+					<div class="col-lg-4 col-md-8 text-center" data-aos="fade-down">
+						<div class="login">
+							 
 				            <div class="row">
 				            	<div class="col-md-12 text-center">
 				                	$(if error)
